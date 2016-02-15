@@ -1,9 +1,9 @@
 require("p5/lib/addons/p5.dom");
 var myp5 = new p5(function( sketch ) {
-    sketch.setup = function() {
+    sketch.setup = () => {
         var margin = 30;
-        width = 700;
-        height = 300;
+        var width = 700;
+        var height = 300;
         var c = sketch.createCanvas(width, height);
         sketch.translate(margin,margin);
         var data = d3.range(8).map(function() { return 1+Math.random() * 10; });
@@ -44,6 +44,6 @@ var myp5 = new p5(function( sketch ) {
         for(var i = 0; i < data.length; i++) {
             sketch.ellipse(sketch.map(i,0,8,0,width-margin*2),sketch.map(data[i],0,10,0,height-margin*2), 10, 10)
         }
-    }.bind(this);
+    };
 }, '1');
 
