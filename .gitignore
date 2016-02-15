@@ -1,3 +1,4 @@
 .idea/
 .gitignore.swp
 **/node_modules/
+**/*.log

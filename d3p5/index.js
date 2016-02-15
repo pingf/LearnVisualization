@@ -13,6 +13,9 @@ var myp5 = new p5(function( sketch ) {
             .y(function(data,index) { return sketch.map(data,0,10,0,height-margin*2); })
             .interpolate('basis');
 
+        console.log(lineGeneratorBasis(data))
+        console.log(data)
+
         var lineGeneratorLinear = d3.svg.line()
             .x(function(data,index) { return sketch.map(index,0,8,0,width-margin*2); })
             .y(function(data,index) { return sketch.map(data,0,10,0,height-margin*2); })
