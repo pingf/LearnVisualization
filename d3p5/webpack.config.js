@@ -2,7 +2,7 @@ var webpack = require("webpack");
 
 module.exports = {
     entry: {
-        index: ['./p5examples/0001.js','webpack/hot/dev-server'],
+        index: ['./index.js','webpack/hot/dev-server'],
     },
     output: {
         path: __dirname+"/build",
