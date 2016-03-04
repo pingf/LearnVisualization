@@ -10,5 +10,5 @@ ReactDOM.render(
             })
         }
     </div>,
-    document.getElementById('demo')
+    document.getElementById('content')
 );
